@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purulia Chhau - Indian Masked Dance Tradition</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #080707;
+        }
+        header {
+            background-image: url('images/header.bg.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+            position: relative;
+        }
+        /* Add dark overlay to ensure text remains readable */
+        header::before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        /* Position text above the overlay */
+        header h1, header p {
+            position: relative;
+            z-index: 1;
+        }
+        nav {
+            background-color: #aa0114;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #9b6b43;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eaeaea;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            color: #8b4513;
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0e0d6;
+        }
+        .lead {
+             font-size: 1.3rem;
+             font-weight: bold;
+             color: #d9be45; 
+             margin-top: 1rem;
+         }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        .quote {
+            font-style: italic;
+            border-left: 4px solid #8b4513;
+            padding-left: 1rem;
+            margin: 2rem 0;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 0.3rem 0;
+            }
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Purulia Chhau</h1>
+        <p class="lead">A Vibrant Masked Dance Tradition from West Bengal, India</p>
+    </header>
+    
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#origin">Origin & History</a>
+        <a href="#cultural">Cultural Significance</a>
+        <a href="#masks">Masks & Costumes</a>
+        <a href="#festivals">Festivals</a>
+        <a href="#practice">Current Practice</a>
+    </nav>
+    
+    <div class="container">
+        <section id="introduction">
+            <h2>Introduction to Purulia Chhau</h2>
+            <p>Purulia Chhau is a vibrant masked dance form that originated in the Purulia district of West Bengal. This semi-classical Indian dance form combines elements of martial arts, acrobatics, and folk traditions. The most distinctive feature of Purulia Chhau is the elaborate masks worn by the dancers, which represent various mythological characters.</p>
+            
+            <p>The dance performances typically depict episodes from the ancient Indian epics like the Ramayana, Mahabharata, and Puranas. Through dynamic body movements, rhythmic footwork, and expressive gestures, the dancers bring these mythological stories to life, creating a mesmerizing visual spectacle.</p>
+            
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/Chhau_dancer.jpg" alt="Purulia Chhau Dancer">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mask.webp" alt="Chhau Masks">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cdp.jpg" alt="Chhau Performance">
+                </div>
+            </div>
+        </section>
+        
+        <section id="origin">
+            <h2>Origin and History</h2>
+            <p>The origins of Purulia Chhau can be traced back to indigenous tribal martial practices and rituals of Eastern India. The word "Chhau" is believed to have derived from the Sanskrit word "Chhaya," meaning shadow or image. Others suggest it comes from "Chhauni," meaning military camp, highlighting its connection to martial traditions.</p>
+            
+            <p>Historically, Chhau was performed by warriors and soldiers as a form of recreation and martial exercise. Over time, it evolved into a structured dance form with regional variations. The three main styles of Chhau are Purulia Chhau (from West Bengal), Seraikella Chhau (from Jharkhand), and Mayurbhanj Chhau (from Odisha).</p>
+            
+            <p>Purulia Chhau specifically developed in the tribal areas of West Bengal and has been nurtured by the local communities for generations. It gained recognition as an important cultural heritage when UNESCO included Chhau dance in its Representative List of the Intangible Cultural Heritage of Humanity in 2010.</p>
+            
+            <div class="quote">
+                "Chhau represents the perfect blend of tribal martial arts, folk traditions, and classical dance elements that has evolved over centuries."
+            </div>
+        </section>
+        
+        <section id="cultural">
+            <h2>Cultural Significance and Stories</h2>
+            <p>Purulia Chhau holds immense cultural significance as it preserves and transmits the ancient mythological stories and spiritual beliefs of India. The dance serves as a medium to educate people about Hindu mythology, moral values, and the eternal struggle between good and evil.</p>
+            
+            <p>Most Chhau performances depict stories of deities like Lord Shiva, Krishna, Ganesha, and episodes from the Ramayana and Mahabharata. One of the most popular themes is the "Mahishasura Mardini," which portrays the battle between Goddess Durga and the buffalo demon Mahishasura. Other common narratives include "Abhimanyu Vadh" (the killing of Abhimanyu) from the Mahabharata and "Sita Haran" (the abduction of Sita) from the Ramayana.</p>
+            
+            <p>Beyond its storytelling aspect, Purulia Chhau also serves as a community bonding activity, bringing people together during festivals and celebrations. It reinforces community identity and provides a sense of continuity with the past, connecting current generations with their cultural roots.</p>
+            
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/durga_mask.jpg" alt="Durga Story in Chhau">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mvdm.jpg" alt="Mythological Scene">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/n.jpg" alt="Community Performance">
+                </div>
+            </div>  
+        </section>
+        
+        <section id="masks">
+            <h2>Description of Masks and Costumes</h2>
+            <p>The masks are the most distinctive feature of Purulia Chhau. These elaborate masks are made primarily from clay, cloth, and paper, with vegetable colors used for painting. Each mask represents a specific character from mythology and is designed to capture the essence of that character's personality and attributes.</p>
+            
+            <p><strong>Mask-Making Process:</strong> The creation of Chhau masks is a specialized craft passed down through generations. Artisans first create a clay model, which is then covered with layers of paper soaked in clay. After drying, the masks are painted with vibrant colors and decorated with beads, sequins, and other ornaments to enhance their appearance.</p>
+            
+            <p><strong>Costumes:</strong> The costumes in Purulia Chhau are equally elaborate and colorful. Male characters typically wear broad pajamas, decorative vests, and flowing turbans adorned with peacock feathers. Female characters are represented by male dancers wearing saris and feminine ornaments. Divine characters like Lord Shiva, Durga, or Krishna have special costumes designed to represent their iconic features and weapons.</p>
+            
+            <p>The vibrant colors, intricate designs, and impressive craftsmanship of both masks and costumes add to the visual spectacle of Purulia Chhau performances, making them visually stunning and instantly recognizable.</p>
+            
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/cmm.jpg" alt="Chhau Mask Making">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dm.webp" alt="Detailed Mask">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/fc.jpg" alt="Full Costume">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cpd.jpg" alt="Performer Dressing">
+                </div>
+            </div>
+        </section>
+        
+        <section id="festivals">
+            <h2>Festivals and Occasions</h2>
+            <p>Purulia Chhau is traditionally performed during spring festivals, particularly during the Chaitra Parva, which coincides with the Bengali New Year celebrations in April. This period is considered auspicious for such performances as it marks the end of winter and the beginning of the agricultural season.</p>
+            
+            <p><strong>Major Festivals:</strong></p>
+            <ul>
+                <li><strong>Chaitra Parva:</strong> The most significant festival for Chhau performances, spanning over 13 days in the month of Chaitra (March-April).</li>
+                <li><strong>Gajan Festival:</strong> Dedicated to Lord Shiva, this festival sees numerous Chhau performances centered around Shaivite themes.</li>
+                <li><strong>Durga Puja:</strong> Many Chhau groups perform episodes related to Goddess Durga during this major Bengali festival.</li>
+                <li><strong>Gambhira:</strong> A folk festival where Chhau performances are organized alongside other folk arts.</li>
+            </ul>
+            
+            <p>Beyond these traditional occasions, contemporary Chhau artists also perform at cultural festivals, tourism events, and private functions throughout the year. The Purulia Chhau Dance Festival, organized by the government of West Bengal, has become an important platform for promoting this art form nationally and internationally.</p>
+            
+            <p>These performances are not merely entertainment but are considered auspicious and are believed to bring prosperity, good harvest, and ward off evil spirits from the community.</p>
+            
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/chp.jpg" alt="Chaitra Parva Festival">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/np.jpg" alt="Night Performance">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/c.jpg" alt="Festival Crowd">
+                </div>
+            </div>
+        </section>
+        
+        <section id="practice">
+            <h2>Current Practice and Relevance</h2>
+            <p>Today, Purulia Chhau faces both challenges and opportunities in a rapidly changing world. Traditional performers often struggle with economic hardships, yet the art form has gained recognition on national and international platforms.</p>
+            
+            <p><strong>Current Status:</strong> There are approximately 20 active Chhau dance troupes in the Purulia district. Many performers are multi-skilled individuals who work as farmers or laborers for their primary income while pursuing dance as a cultural duty and passion. In recent years, government initiatives and NGOs have worked to support these artists through training programs, financial assistance, and performance opportunities.</p>
+            
+            <p><strong>Modern Adaptations:</strong> Contemporary Chhau artists have begun to incorporate modern themes and issues while maintaining the traditional form. Some experimental productions address environmental concerns, social issues, and even contemporary political events, showing the adaptability of this ancient art form.</p>
+            
+            <p><strong>Global Recognition:</strong> UNESCO's recognition of Chhau as an Intangible Cultural Heritage has boosted its international profile. Purulia Chhau troupes now regularly perform at international festivals, cultural exchange programs, and world stages, spreading awareness about this unique Indian dance tradition.</p>
+            
+            <p><strong>Education Initiatives:</strong> Several institutions now offer formal training in Chhau, including the Eastern Zonal Cultural Centre in Kolkata and the Sangeet Natak Akademi's centers. These initiatives aim to preserve the traditional knowledge while creating professional opportunities for new generations of dancers.</p>
+            
+            <div class="video-container">
+                 <iframe width="704" height="396" 
+                      src="https://www.youtube.com/embed/-6GvAxdEL5s" title="Purulia Chhau | Folk Dance | Bengal | India" 
+                      frameborder="0"  
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"                                                  
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen>
+                 </iframe>
+             </div>
+
+            
+            <p>Despite modernization, the essence of Purulia Chhau remains deeply connected to its roots in rural Bengal. It continues to serve as a vital link between past and present, preserving ancient stories and traditions while evolving to remain relevant in contemporary society.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>Created by Nisarg Khairnar | Grade 10 Summer Assignment</p>
+        <p>Reliance Foundation School, Surat</p>
+        <p>Sources: Ministry of Culture (Government of India), UNESCO Intangible Cultural Heritage, Sangeet Natak Akademi</p>
+    </footer>
+</body>
+</html>
